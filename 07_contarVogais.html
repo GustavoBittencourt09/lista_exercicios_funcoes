@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-
-
+    const palavra = prompt("Insira uma palavra").toLowerCase();
+    const vogais = "aeiou"
     //PROCESSAMENTO
-
+    function vogal (palavra) {
+        return palavra.split("")
+        .filter (letra => vogais.includes(letra)).length
+    }
 
     //SAÍDA
-
+    const totalVogais = vogal(palavra)
+    alert(totalVogais)
 </script>

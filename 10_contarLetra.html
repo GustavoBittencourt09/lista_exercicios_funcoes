@@ -6,11 +6,24 @@
     */
 
     //ENTRADA
-
+    let frase = prompt("Informe uma frase:");
+    let letra = prompt("Informe uma letra:");
 
     //PROCESSAMENTO
+    function contarLetra(frase, letra) {
+        let contador = 0;
+        let fraseMinuscula = frase.toLowerCase();
+        let letraMinuscula = letra.toLowerCase();
 
+        for (let i = 0; i < fraseMinuscula.length; i++) {
+            if (fraseMinuscula[i] === letraMinuscula) {
+                contador++;
+            }
+        }
+        return contador;
+    }
 
     //SAÍDA
-
+    let quantidade = contarLetra(frase, letra);
+    alert(`A letra "${letra}" aparece ${quantidade} vezes na frase.`);
 </script>

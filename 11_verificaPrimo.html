@@ -5,11 +5,27 @@
     */
 
     //ENTRADA
+    let numero = Number(prompt("Informe um número inteiro:"));
 
 
     //PROCESSAMENTO
-
+    function verificarNumeroPrimo(n) {
+        if (n <= 1) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 
     //SAÍDA
-
+    let ehPrimo = verificarNumeroPrimo(numero);
+    if (ehPrimo) {
+        alert(`É primo.`);
+    } else {
+        alert(`Não é primo.`);
+    }
 </script>

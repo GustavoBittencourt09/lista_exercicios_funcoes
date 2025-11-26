@@ -5,11 +5,18 @@
     */
 
     //ENTRADA
-
+    let numeroFatorial = Number(prompt("Informe um número inteiro:"));
 
     //PROCESSAMENTO
-
+    function calcularFatorial(n) {
+        let fatorial = 1;
+        for (let i = 2; i <= n; i++) {
+            fatorial *= i;
+        }
+        return fatorial;
+    }
 
     //SAÍDA
-
+    let resultadoFatorial = calcularFatorial(numeroFatorial);
+    alert(`O fatorial de ${numeroFatorial} é: ${resultadoFatorial}`);
 </script>

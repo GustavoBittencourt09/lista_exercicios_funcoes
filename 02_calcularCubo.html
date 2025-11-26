@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
+    let numeroCubo = Number(prompt(`Informe um número`));
 
     //PROCESSAMENTO
-
+    function calcularCubo(calcular) {
+        return numeroCubo * numeroCubo;
+    }
 
     //SAÍDA
-
+    let resultadoCubo = calcularCubo(numeroCubo);
+    alert(`O cubo do número ${numeroCubo} é: ${resultadoCubo}`);
 </script>
